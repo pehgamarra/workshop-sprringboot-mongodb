@@ -6,13 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.pedrogamarra.mongo.domain.User;
-import com.pedrogamarra.mongo.repository.UserRepositoy;
+import com.pedrogamarra.mongo.repository.UserRepository;
 
 @Service
 public class UserService {
 	
 	@Autowired
-	private UserRepositoy repo;
+	private UserRepository repo;
 	
 	public List<User> findAll(){
 		return repo.findAll();
